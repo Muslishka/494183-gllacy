@@ -21,8 +21,11 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
-      <div class="Search">
-        <button class="header-button">Поиск </button>
+      <div class="search">
+          <button class="header-button" type="submit">Поиск</button>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" placeholder="Что ищем?">
+        </form>
       </div>
       <div class="user-navigation">
         <a class="login-link" href="login.html">Вход</a>
@@ -129,9 +132,11 @@
           <p class="blog-new">Новое в нашем блоге</p>
           <a href="#" class="hidden-article">10 способов сервировки фруктовых щербетов к столу </a>
         </article>
-        <div class="form">
-          <p class="form-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-          <form><button>Отправить</button></form>          
+        <div class="sending-email">
+          <form class="sending-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="sending-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <input type="submit" value="Отправить">
+        </form>          
         </div>
       </section>
       <section class="map-container">
@@ -145,9 +150,9 @@
             Для заказов по телефону:<br>
             <a href="tel:88124502525"><b>8 812 450-25-25</b></a><br>
             (с 10 до 20 ежедневно)</p>
-            <form>
+            <form class="email-form" action="https://echo.htmlacademy.ru" method="post">
               <input type="email" name="email" placeholder="Электронная почта">
-                <input type="submit" class="button"placeholder="Как вас зовут?">   
+              <input type="submit" class="button" placeholder="Как вас зовут?">   
             </form>
                          
         </div>
