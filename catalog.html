@@ -30,8 +30,55 @@
         <a class="login-link" href="login.html">Вход</a>
       </div>
       <!-- Красная корзина. +2 товара -->
-      <div class="header-bag-rad">
+      <div class="header-bag">
         <a class="bag" href="#">2 товара</a>
+        <div class="full-bag">
+          <table class="bag-products">
+            <tr>
+              <td>
+                <button class="deletion-button" type="button" value="x">х</button>
+              </td>
+              <td>
+                <a href="#">
+                  <img src="img/ice-cream1-small.png" alt="ice-cream-bag">
+                </a>
+              </td>
+              <td>
+                <a href="#">Пломбир с апельсиновым джемом</a>
+              </td>
+              <td>
+                <span class="bold">1,5 кг х</span> 200 руб.</td>
+              <td>
+                <span class="bold">300 руб.</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="deletion-button" type="button" value="x">х</button>
+              </td>
+              <td>
+                <a href="#">
+                  <img src="img/ice-cream3-small.png" alt="ice-cream-bag">
+                </a>
+              </td>
+              <td>
+                <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+              </td>
+              <td>
+                <span class="bold">1,5 кг х</span> 200 руб.</td>
+              <td>
+                <span class="bold">300 руб.</span>
+              </td>
+            </tr>
+            <div class="sum">
+              <p class="sum-text">Итог: 750 руб.</p>
+            </div>
+            <div class="button-bag">
+              <a href="#" class="button-order">Оформить заказ</a>
+            </div>
+
+          </table>
+        </div>
       </div>
       <div class="header-contacs">
         <p class="header-mode"> С 10 до 20, ежедневно
@@ -56,38 +103,55 @@
       <h2 class="visually-hidden">Фильтр каталога </h2>
       <!-- Здесь будет фильтр -->
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-        <label for="sorting-id">Сортировка:</label>
-        <br>
-        <select name="sorting" id="sorting-id">
-          <option value="по популярности" selected>по популярности</option>
-          <option value="сначала недорогие">сначала недорогие</option>
-          <option value="сначала дорогие">сначала дорогие</option>
-          <option value="по жирности">по жирности</option>
-        </select>
-        <br>
-        <br>
-        <label for="range-id">Цена: 100 руб. - 500 руб.</label>
-        <br>
-        <input id="range-id" type="range" min="100" max="500" step="5">
-        <br>
-        <lable>Жирность:
-          <br>
-          <input type="radio" value="0%" name="fat">0%
-          <input type="radio" value="до 10%" name="fat" checked>до 10%
-          <input type="radio" value="до 30%" name="fat">до 30%
-          <input type="radio" value="выше 30%" name="fat">выше 30%
-        </lable>
-        <br>
-        <lable>Наполнители:
-          <br>
-          <input type="checkbox" name="chocolate" checked>шоколадные
-          <input type="checkbox" name="sugar powder" checked>сахарные присыпки
-          <input type="checkbox" name="fruit">фрукты
-          <input type="checkbox" name="syrups">сиропы
-          <input type="checkbox" name="jams">джемы
-        </lable>
-        <br>
-        <button type="supmit">Применить</button>
+        <fieldset class="sorting-form">
+          <h3 class="sorting-header">Сортировка:</h3>
+          <div class="sort">
+            <select name="sorting" id="sorting-id">
+              <option value="по популярности" selected>по популярности</option>
+              <option value="сначала недорогие">сначала недорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="range-form">
+          <h3 for="range-id">Цена: 100 руб. - 500 руб.</h3>
+          <div class="range-price">
+            <input id="range-id" type="range" min="100" max="500" step="5">
+          </div>
+        </fieldset>
+        <fieldset class="fat-form">
+          <h3 class="fat-header">Жирность:</h3>
+          <div class="radio-fat">
+            <label>
+              <input type="radio" value="0%" name="fat">0%</label>
+            <label>
+              <input type="radio" value="до 10%" name="fat" checked>до 10%</label>
+            <label>
+              <input type="radio" value="до 30%" name="fat">до 30%</label>
+            <label>
+              <input type="radio" value="выше 30%" name="fat">выше 30%</label>
+          </div>
+        </fieldset>
+        <fieldset class="additive-form">
+          <h3 class="additive-header">Наполнители:</h3>
+          <div class="additive-checkbox">
+            <label>
+              <input type="checkbox" name="chocolate" checked>шоколадные</label>
+            <label>
+              <input type="checkbox" name="sugar powder" checked>сахарные присыпки</label>
+            <label>
+              <input type="checkbox" name="fruit">фрукты</label>
+            <label>
+              <input type="checkbox" name="syrups">сиропы</label>
+            <label>
+              <input type="checkbox" name="jams">джемы</label>
+          </div>
+        </fieldset>
+
+        <div class="button-form">
+          <button type="supmit">Применить</button>
+        </div>
       </form>
 
     </section>
