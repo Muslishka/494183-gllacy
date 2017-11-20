@@ -1,0 +1,113 @@
+body {
+    margin:0;
+    padding: 0;
+
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700; /* не знаю как определить */
+    color: #ffffff;
+
+    background-color: #849d8f;
+    background-image: url("img/background.jpg");
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+  }
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #849d8f;
+}
+
+.site-navigation,
+.catalog-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.catalog-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.catalog-navigation a:hover, /* Как скрыть выпадаху? */
+.catalog-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #f7f6f3;
+  color: #323232;
+}
+
+.header-bag
+
+.main-slider h3 {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.main-slider a {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.button-slider {
+
+
+    /* Нужно ли делать выравнивание элемента по центру? */
+   /* Кажется, я лишние классы для button задала*/
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+
+    background-color: #ec583c;
+    border: none;
+}
+
+.gifts-conditions {
+    list-style: none;
+}
+
+.gifts-conditions h3{
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.gifts-conditions li:first-of-type{
+    background-image: url("img/choco-back.png"); /* Не получилось=((*/
+}
+
+.gifts-conditions li:last-of-type {
+    background-image: url("img/razz-back.png"); /* Не получилось=((*/
+}
+
+.product-items {
+    list-style: none;
+}
+
+.product-items a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.item-hit {
+    background-image: url("img/hit.svg"); /* Не получилось=((*/
+}
+
+.features-container {
+    background-image: url("img/back-fon.png");
+}
