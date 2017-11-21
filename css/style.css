@@ -61,13 +61,6 @@ a {
     text-align: center;
 }
 
-.button-slider {
-
-
-    /* Нужно ли делать выравнивание элемента по центру? */
-   /* Кажется, я лишние классы для button задала*/
-}
-
 .button {
     font: inherit;
     text-align: center;
@@ -76,23 +69,29 @@ a {
 
     background-color: #ec583c;
     border: none;
+    border-radius: 25px 25px;
+    padding: 10px 20px;
 }
 
 .gifts-conditions {
     list-style: none;
 }
 
-.gifts-conditions h3{
+.gifts-conditions h3 {
     font-size: 35px;
     line-height: 41px;
 }
 
-.gifts-conditions li:first-of-type{
+.gifts-conditions li:first-of-type {
     background-image: url("img/choco-back.png"); /* Не получилось=((*/
+    width: 560px;
+    height: 229px;
+    
 }
 
 .gifts-conditions li:last-of-type {
     background-image: url("img/razz-back.png"); /* Не получилось=((*/
+    
 }
 
 .product-items {
@@ -106,8 +105,10 @@ a {
 
 .item-hit {
     background-image: url("img/hit.svg"); /* Не получилось=((*/
+   
 }
 
 .features-container {
     background-image: url("img/back-fon.png");
+  
 }
