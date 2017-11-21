@@ -9,7 +9,7 @@ body {
     color: #ffffff;
 
     background-color: #849d8f;
-    background-image: url("img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: repeat;
 }
 
@@ -70,7 +70,7 @@ a {
     background-color: #ec583c;
     border: none;
     border-radius: 25px 25px;
-    padding: 10px 20px;
+    padding: 7px 20px;
 }
 
 .gifts-conditions {
@@ -83,15 +83,15 @@ a {
 }
 
 .gifts-conditions li:first-of-type {
-    background-image: url("img/choco-back.png"); /* Не получилось=((*/
+    background-image: url("../img/choco-back.png"); 
     width: 560px;
-    height: 229px;
-    
+    height: 229px;    
 }
 
 .gifts-conditions li:last-of-type {
-    background-image: url("img/razz-back.png"); /* Не получилось=((*/
-    
+    background-image: url("../img/razz-back.png"); 
+    width: 560px;
+    height: 229px;    
 }
 
 .product-items {
@@ -104,11 +104,131 @@ a {
 }
 
 .item-hit {
-    background-image: url("img/hit.svg"); /* Не получилось=((*/
+    background-image: url("../img/hit.svg"); /* Не получилось=((*/
    
 }
 
 .features-container {
-    background-image: url("img/back-fon.png");
-  
+    color: #323232;
+    width: 1146px;
+    height: 306px;  
+
+    background-image: url("../img/back-fon.png");
+    border-radius: 10px 10px;
+    background-repeat: no-repeat;
+}
+.features-text {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.features-list {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.article-item {
+    color: #323232;
+    width: 560px;
+    height: 220px;  
+    background-image: url("../img/strawberry-back.png");
+    border-radius: 10px 10px;    
+}
+
+.blog-new {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.hidden-article {
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: underline; 
+    color: #323232;
+    display: block;
+    width: 335px;
+}
+
+.article-item a:hover,
+.article-item a:focus {
+    color: #323232;
+}
+
+.sending-email {
+    background-image: url("../img/mail-back.png");
+    border-radius: 10px 10px;
+    width: 560px;
+    height: 220px; 
+}
+
+.sending-form {
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+    width: 549px;
+    height: 211px; 
+
+    background-image: url("../img/mail-back2.png");
+      
+}
+
+.map {
+    background-image: url("../img/map.png");
+    width: 1200px;
+    height: 430px;  
+}
+
+.address-text {
+    background-image: url("../img/contacs.png");
+    width: 302px;
+    height: 305px;  
+    font-size: 14px;
+    line-height: 20px;
+    color: #323232;
+}
+
+.address-text b {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #323232
+}
+
+.address-text a:hover,
+.address-text a:focus {
+    color: #323232;
+}
+
+.footer-link {
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+}
+.footer-copyright a:hover,
+.afooter-copyright a:focus {
+    color: #ffffff;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.footer-navigation {
+    list-style: none;
+}
+
+.login-form {
+    background-image: url("../img/login-form-back.png");
+    width: 313px;
+    height: 252px;  
+   
 }
