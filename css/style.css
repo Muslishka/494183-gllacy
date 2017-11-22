@@ -310,7 +310,16 @@ a.bold-item {
     line-height: 16px;
     color: #323232;
     font-weight: 600;
+
+    
 } 
+
+.full-bag {
+    background-image: url("../img/bag-fon.png");
+    background-repeat: no-repeat;
+    width: 576px;
+    height: 280px;
+}
 
 .sum-text {
     font-size: 15px;
