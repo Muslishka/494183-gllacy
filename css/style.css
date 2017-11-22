@@ -15,7 +15,12 @@ body {
 
 a {
     text-decoration: none;
-  }
+}
+
+.header-tel {
+    color: #ffffff;
+}
+
 
 .main-navigation {
     font-size: 16px;
@@ -61,6 +66,7 @@ a {
     text-align: center;
 }
 
+/* Мой вариант
 .button {
     font: inherit;
     text-align: center;
@@ -71,7 +77,40 @@ a {
     border: none;
     border-radius: 25px 25px;
     padding: 7px 20px;
+}*/
+
+.button {
+    display: inline-block;
+    padding: 12px 50px;
+   
+    
+    vertical-align: top;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+   
+    background: #f26843;
+    background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 100px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
+   
+.button:hover {
+    background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+   
+.button:active {
+    background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}    
+
 
 .gifts-conditions {
     list-style: none;
@@ -231,4 +270,72 @@ a {
     width: 313px;
     height: 252px;  
    
+}
+
+
+
+.footer-navigation a {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+a.bold-item {
+    font-weight: 700;
+}
+
+.links a {
+    color: #323232;
+    text-decoration: underline;
+}
+
+.bag-products a {
+    color: #323232;
+    
+}
+.bag-products {
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+    font-weight: 600;
+} 
+
+.sum-text {
+    font-size: 15px;
+    line-height: 18px;
+    color: #323232;
+    font-weight: 600;
+}
+
+.items-catalog {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.items-catalog h3 {
+    text-decoration: underline;
+    font-weight: 400;
+}
+.price {
+    font-size: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.kilo {
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.pagination-list a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
 }
