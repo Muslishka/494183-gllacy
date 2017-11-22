@@ -272,7 +272,17 @@ a {
    
 }
 
+.breadcrumbs_catalog {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
 
+.breadcrumbs_catalog a {
+    color: #ffffff;
+    text-decoration: underline;
+}
 
 .footer-navigation a {
   color: #ffffff;
@@ -310,13 +320,13 @@ a.bold-item {
 }
 
 .items-catalog {
-    font-size: 16px;
-    line-height: 22px;
     color: #ffffff;
     font-weight: 700;
 }
 
 .items-catalog h3 {
+    font-size: 16px;
+    line-height: 22px;
     text-decoration: underline;
     font-weight: 400;
 }
@@ -337,5 +347,9 @@ a.bold-item {
 .pagination-list a {
     font-size: 16px;
     line-height: 18px;
+    color: #ffffff;
+}
+
+.footer-social a{
     color: #ffffff;
 }
