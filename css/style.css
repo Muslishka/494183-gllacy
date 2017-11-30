@@ -10,7 +10,9 @@ body {
 
     background-color: #849d8f;
     background-image: url("../img/background.jpg");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    
 }
 
 a {
@@ -21,44 +23,139 @@ a {
     color: #ffffff;
 }
 
-
-.main-navigation {
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-
-    background-color: #849d8f;
-}
-
 .site-navigation,
 .catalog-navigation,
 .user-navigation {
     list-style: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400px;
 }
 
-.site-navigation a,
-.catalog-navigation a,
-.user-navigation a {
-  color: #ffffff;
+.site-navigation {
+    color: #ffffff;    
 }
 
-.site-navigation a,
-.catalog-navigation a{
+.site-navigation a {
+    color: #ffffff;
     border-bottom: 1px solid;
-  }
-
-
-.site-navigation a:hover,
-.site-navigation a:focus,
-.catalog-navigation a:hover, /* Как скрыть выпадаху? */
-.catalog-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: #f7f6f3;
-  color: #323232;
 }
 
-.header-bag
+.site-navigation a:hover {
+    background-color: #f7f6f3;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color:#333333;
+    border-bottom: none;
+}
+
+.site-navigation a:focus {
+    background-color: #ededed;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color:#333333;
+    border-top: 1px solid #696968;
+    border-bottom: none;
+}
+
+.site-navigation a:active {
+    background-color: #ededed;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color:#333333;
+    border-bottom: none;
+}
+
+.catalog-navigation a{
+  color: #000000;
+  border-bottom: none;
+}
+
+.catalog-navigation a:hover {
+  background-color: #fbded7;
+  color: #000000;
+}
+
+
+.catalog-navigation a:focus {
+    background-color: #d07058;
+    color: #ffffff;
+}
+
+.catalog-navigation a:active {
+    background-color: #f6b5a5;
+    color: #000000;
+}
+
+.user-navigation a {
+    background-image: url("../img/entrance-wight.svg");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    width: 93px;
+    height: 33px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 16px;
+    border-radius: 40px;
+    background-color: #a1b5aa;
+    background-position: 16px 50%;
+    padding: 6px 16px 6px 45px;   
+
+}
+
+.user-navigation a:hover {
+    background-image: url("../img/entrance.svg");
+    color: #000000;
+    background-color: #f8f7f4;
+}
+
+.search button {
+    background-image: url("../img/loupe.svg");
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #a1b5aa;
+    background-position: 40% 40%;
+    border: none;
+    outline: none;
+
+}
+
+.search button:hover {
+    background-image: url("../img/loupe-black.svg");
+    background-color: #f8f7f4; 
+}
+
+.header-bag a {
+    background-image: url("../img/basket.svg");
+    background-size: 22px;
+    background-color: #a1b4a9;
+    background-repeat: no-repeat;
+    width: 119px;
+    height: 33px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 16px;
+    border-radius: 40px;
+    background-position: 16px 50%;
+    padding: 6px 16px 6px 45px;   
+
+}
+
+.header-bag a:hover {
+    background-image: url("../img/basket-red.svg");
+    background-repeat: no-repeat;
+    color: #323232;
+    background-color: #f8f7f4;
+    width: 119px;
+    height: 33px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 40px;
+    background-position: 16px 50%;
+    padding: 6px 16px 6px 45px;
+}
 
 .main-slider h3 {
     font-size: 60px;
@@ -71,19 +168,6 @@ a {
     line-height: 44px;
     text-align: center;
 }
-
-/* Мой вариант
-.button {
-    font: inherit;
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-
-    background-color: #ec583c;
-    border: none;
-    border-radius: 25px 25px;
-    padding: 7px 20px;
-}*/
 
 .button {
     display: inline-block;
@@ -115,8 +199,7 @@ a {
     background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}    
-
+}   
 
 .gifts-conditions {
     list-style: none;
@@ -320,13 +403,6 @@ a.bold-item {
     
 } 
 
-.full-bag {
-    background-image: url("../img/bag-fon.png");
-    background-repeat: no-repeat;
-    width: 576px;
-    height: 280px;
-}
-
 .sum-text {
     font-size: 15px;
     line-height: 18px;
@@ -418,6 +494,19 @@ form .button {
     background-color: #eaeaea;
     box-shadow: inset 0 2px 2px rgba(138, 139, 138, 1);
 }    
+
+.sort select,
+.radio-fat,
+.additive-checkbox,
+.range-price {
+    background-color: #aabab0;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #ffffff;
+}
+
+
+
 
 
 
