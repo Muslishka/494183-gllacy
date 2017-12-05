@@ -507,7 +507,9 @@ form .button {
     color: #ffffff;
 }
 
-
+.visually-hidden {
+    display: none;
+}
 
 /* ---------Временно для сетки---------- */
 
@@ -515,18 +517,16 @@ html,
 body {
 /* Временно для сетки */
     
-    min-height: 2416px;
-    min-width: 1146px;
-    margin: auto;
-  
-  
+    min-height: auto;
+    min-width: 1200px; 
+    margin: auto; 
 }
 
 body {
     /* Временно для сетки */
     background-image: url("../img/fon-test.jpg");
     background-size: 1200px auto;
-    
+    margin: auto;
 }
 
 .main-header {
@@ -537,86 +537,275 @@ body {
     min-height: 113px;
 }
 
+.layout-header {
+    margin: 0 auto;
+    width: 1146px;
+    padding: 0;
+}
+
 .main-navigation {
     height: 100px;
-    width: 1200px;
+    width: 100%;
     background-color: transparent; 
-      
+    padding: 0;  
     
     /* Временно для сетки */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;   
+    flex-direction: row;
+    justify-content: space-between;   
     flex-wrap: wrap;
-    align-content: stretch;
-    align-items: space-between;
-    margin: auto;
+    margin: 0 auto;
 }
+
+
 
 .logo-header {
     margin: 0;
     padding: 0;
     height: 65px;
     width: 155px;   
-    order: 1;
-    margin-left: 27px;
+    
 }
 
 .site-navigation {
     margin: 0;
     padding: 0;
-    order: 2;
-    /* Временно для сетки */
-    min-height: 48px;
-    min-width: 667px;
+    height: 48px;
+    width: 675px;
 }
 
-.user-navigation {
+.layout-header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 267px;
+    height: 114px;
     margin: 0;
     padding: 0;
-    order: 4;
-    margin-right: 27px;
-    
-    /* Временно для сетки */
-    min-height: 48px;
-    min-width: 267px;
+}
+
+
+.user-navigation {
+    height: 57px;
+    width: 267px;
 }
 
 .header-contacs {
-    margin: 0;
-    padding: 0;
-    order: 3;
-    
-    /* Временно для сетки */
-    min-height: 48px;
-    min-width: 267px;
-    align-self: flex-end;
+    height: 57px;
+    width: 267px;
 }
 
+
 .container {
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 0;  
+
+    /* Временно для сетки */
+    min-width: 1200px;
+    min-height: auto;  
+}
+
+.layout-container {
+    width: 1146px;
+    margin: 0 auto; 
+    padding: 0;   
+  
+}
+
+.gifts-conditions {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 231px;
+        
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;    
+    margin-top: 529px;
+}
+
+
+.gifts-conditions li {
+    width: 560px;
+    height: 231px;
+    margin: 0;
+    padding: 0; 
+}
+
+.items {
+    margin: 0 auto;
+    padding: 0;
+    width: 1146px;
+    height: 400px;
+}
+
+.product-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0; 
+    width: 100%;   
+}
+
+.item-container {
+    width: 267px;
+    height: 400px;
+    margin: 0;
+    padding: 0; 
+}
+
+.features {
+    margin: 0 auto;
+    padding: 0;
+    width: 1146px; 
+    height: 307px;   
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 307px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.features-text {
+    margin: 0;
+    padding: 0;
+
+    width: 1125px;
+    height: 92px;
+    text-align: left;
+
+}
+
+.features-list {
+    list-style: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 185px;
+    margin: 0;
+    padding: 0;
+}
+
+.features-item {
+    margin: 0;
+    padding: 0;
+    width: 552px;
+    min-height: 84px;
+}
+
+.blog {
+    width: 1146px;
+    height: 220px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 38px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article-item {
+    margin: 0;
+    padding: 0;
+    width: 560px;
+    height: 220px;
+}
+
+.sending-email {
+    margin: 0;
+    padding: 0;
+    width: 560px;
+    height: 220px;
+}
+
+.map-container {
+    width: 1200px;
+    height: 428px;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.map {
+    width: 100%;
+    height: 428px;
+    margin: 0;
+    padding: 0;  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.address-text {
+    margin: 0;
+    padding: 0;
+    width: 303px;
+    height: 305px;
+    margin-top: 63px;
+    margin-right: 27px;
+}
+
+.main-footer {
+
+   margin: 0 auto;
+   margin-bottom: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 1146px;
+   height: 103px;
+}
+
+.footer-social {
     margin: 0;
     padding: 0;
     display: flex;
-    margin-left: 0;  
-    /* Временно для сетки */
-    min-width: 1200px;
-    min-height: 2338px;  
+    flex-direction: row;
+    width: 267px;
+    height: 37px;
+    justify-content: flex-start;
+    margin-top: 8px;
 }
 
+.footer-social li {
+    margin-right: 13px;
+    padding: 0;
+    width: 37px;
+    height: 37px;  
+}
 
+.footer-navigation {
+    margin: 0;
+    padding: 0;
+    width: 560px;
+    height: 37px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+    width: 267px;
+    height: 61px;
+}

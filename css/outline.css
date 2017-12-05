@@ -23,9 +23,108 @@
     background-color: rgba(15, 14, 70, 0.3);
 
 }
-/*
-.container {
+
+.gifts {
     outline: 1px solid #fbff00;
-    background-color: rgba(57, 248, 9, 0.3);
+    background-color: rgba(248, 234, 33, 0.2);
 }
-*/
+
+.gifts-conditions {
+    outline: 1px solid #fbff00;
+    background-color: rgba(248, 33, 105, 0.3);
+}
+
+.gifts li {
+    outline: 1px solid #fbff00;
+    background-color: rgba(15, 14, 70, 0.3);
+}
+
+.items {
+    outline: 1px solid #fbff00;
+    background-color: rgba(146, 23, 39, 0.3);
+}
+
+.product-items {
+    outline: 1px solid #fbff00;
+    background-color: rgba(248, 74, 98, 0.3);
+}
+
+.item-container {
+    outline: 1px solid #fbff00;
+    background-color: rgba(198, 240, 49, 0.3);
+}
+
+.features-container {
+    outline: 1px solid #fbff00;
+    background-color: rgba(132, 49, 240, 0.3);
+}
+
+.features-list {
+    outline: 1px solid #fbff00;
+    background-color: rgba(226, 33, 243, 0.3);
+}
+
+.features-item {
+    outline: 1px solid #fbff00;
+    background-color: rgba(82, 11, 15, 0.3);
+}
+
+.features-text {
+    outline: 1px solid #fbff00;
+    background-color: rgba(153, 13, 22, 0.3);
+}
+
+.blog {
+    outline: 1px solid #fbff00;
+    background-color: rgba(243, 26, 63, 0.3);
+
+}
+
+.article-item {
+    outline: 1px solid #fbff00;
+    background-color: rgba(91, 26, 243, 0.3);
+
+}
+
+.sending-email {
+    outline: 1px solid #fbff00;
+    background-color: rgba(91, 26, 243, 0.3);
+
+}
+
+.map-container {
+    outline: 1px solid #fbff00;
+    background-color: rgba(243, 239, 26, 0.3);
+
+}
+
+.address-text {
+    outline: 1px solid #fbff00;
+    background-color: rgba(223, 15, 15, 0.3);
+}
+
+.main-footer {
+    outline: 1px solid #fbff00;
+    background-color: rgba(253, 13, 193, 0.3);
+
+}
+
+.footer-social {
+    outline: 1px solid #fbff00;
+    background-color: rgba(223, 15, 15, 0.3);
+}
+
+.footer-social li {
+    outline: 1px solid #fbff00;
+    background-color: rgba(223, 15, 15, 0.3);
+}
+
+.footer-navigation {
+    outline: 1px solid #fbff00;
+    background-color: rgba(223, 15, 15, 0.3);
+}
+
+.footer-copyright  {
+    outline: 1px solid #fbff00;
+    background-color: rgba(223, 15, 15, 0.3);
+}
