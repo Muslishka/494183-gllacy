@@ -373,7 +373,7 @@ a {
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
-    
+    list-style: none;
 }
 
 .breadcrumbs_catalog a {
@@ -454,9 +454,10 @@ a.bold-item {
     border-radius: 100%;
     background-color: #ffffff;
     display: block;
+     
    
-    width: 28px;
-    height: 28px;
+    width: 27px;
+    height: 26px;
     
 }
 
@@ -573,18 +574,27 @@ body {
 
 
 .logo-header {
-    margin: 0;
-    padding: 0;
     height: 65px;
     width: 155px;   
     
 }
 
 .site-navigation {
-    margin: 0;
-    padding: 0;
     height: 48px;
     width: 675px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-navigation li {
+    margin-right: 27px;
+}
+
+.current-item {
+    background-color: #d07058;
+    border-radius: 40px;
+    padding: 7px 15px;
+    border: none;
 }
 
 .layout-header-right {
@@ -595,15 +605,11 @@ body {
     align-content: flex-start;
     width: 267px;
     height: 114px;
-    margin: 0;
-    padding: 0;
     margin-top: 24px;
 }
 
 
 .user-navigation {
-    margin: 0;
-    padding: 0;
     height: 33px;
     width: 267px;
     display: flex;
@@ -710,9 +716,6 @@ body {
 }
 
 .features-text {
-    margin: 0;
-    padding: 0;
-
     width: 1125px;
     height: 92px;
     text-align: left;
@@ -917,6 +920,93 @@ body {
     left: 0; 
     top: -400px;  
 }
+
+/*сетка каталога */
+
+.breadcrumbs_catalog {
+    position: relative;
+    top: -70px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 267px;
+    height: 22px;
+} 
+.breadcrumbs_catalog li{
+    width: 67px;
+    margin-right: 9px;
+}
+
+.filter-form {
+    width: 964px;
+    height: 131px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.sort select {
+    width: 194px;
+    
+}
+
+.range-price {
+    width: 219px;
+}
+
+.radio-fat {
+    width: 415px;
+}
+
+.additive-checkbox {
+    width: 702px;
+}
+
+.button-catalog {
+    width: 145px;
+}
+
+.items-catalog {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+    width: 1146px;
+}
+
+.product-items {
+    width: 100%;
+    height: 1128px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-items li {
+    width: 267px;
+    height: 327px;
+}
+
+.pagination-list {
+    width: 267px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-end; 
+
+    /* временно для сетки */
+    margin-top: 100px;
+}
+
+.pagination-list li {
+    
+    text-align: center;
+    margin: 7px; 
+}
+
 
 
 
