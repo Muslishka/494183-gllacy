@@ -597,16 +597,6 @@ body {
 }
 
 
-.container {
-    margin: 0 auto;
-    padding: 0;
-    margin-left: 0;  
-
-    /* Временно для сетки */
-    min-width: 1200px;
-    min-height: auto;  
-}
-
 .layout-container {
     width: 1146px;
     margin: 0 auto; 
