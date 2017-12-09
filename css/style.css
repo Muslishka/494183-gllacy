@@ -991,7 +991,7 @@ body {
     background-repeat: no-repeat;
     background-size: 34px;
     width: 33px;
-    height: 33px;
+    height: 33px; 
 }
 
 .social-button:hover {
