@@ -457,33 +457,36 @@ a {
     font-weight: 700;
 }
 
+.pagination-list  {
+    list-style: none;
+}
+
 .pagination-list a {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 28px;
     color: #ffffff;
     list-style: none;
+    padding: 8px;
 }
 
 .pagination-item-current {
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #ffffff;
-    display: block;
-     
-   
-    width: 27px;
-    height: 26px;
-    
-}
-
-.pagination-item-current a{
     color: #323232;
-    font-size: 16px;
-    line-height: 18px; 
-  
+    width: 26px;
+    height: 24px;
+    padding-top: 2px;
+        
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
 }
 
-.pagination-list  {
-    list-style: none;
+.pagination-list .pagination-item:hover {
+    border-radius: 50%;
+    background-color: #9db1a5;
+    width: 26px;
+    height: 26px;
 }
 
 .footer-social a{
@@ -977,8 +980,8 @@ body {
 .footer-social li {
     margin-right: 11px;
     padding: 0;
-    width: 33px;
-    height: 33px;
+    width: 34px;
+    height: 34px;
     border: 2px solid #c2cec7; 
     border-radius: 50%; 
     box-shadow: none; 
@@ -986,35 +989,76 @@ body {
 
 
 
-.footer-social li:nth-child(1) {
+.footer-social .button-twitter {
+   
     background-image: url(../img/twitter.svg);
     background-repeat: no-repeat;
     background-size: 34px;
-    width: 33px;
-    height: 33px; 
+
 }
 
-.social-button:hover {
+.footer-social .button-twitter:hover {
     background-image: url(../img/twitter-hover.svg);
     background-repeat: no-repeat;
     background-size: 34px;
 }
 
-.footer-social li:nth-child(2) {
+.footer-social .button-twitter:active {
+    background-image: url(../img/twitter-active.svg);
+    background-repeat: no-repeat;
+    background-size: 34px;
+}
+
+.footer-social .button-instagram {
     background-image: url(../img/instagram.svg);
     background-repeat: no-repeat;
     background-size: 34px;  
-    
 }
 
-.footer-social li:nth-child(3) {
+.footer-social .button-instagram:hover {
+    background-image: url(../img/instagram-hover.svg);
+    background-repeat: no-repeat;
+    background-size: 34px;  
+}
+
+.footer-social .button-instagram:active {
+    background-image: url(../img/instagram-active.svg);
+    background-repeat: no-repeat;
+    background-size: 34px;  
+}
+
+.footer-social .button-fb {
     background-image: url(../img/fb.svg);
     background-repeat: no-repeat;
     background-size: 34px; 
 }
 
-.footer-social li:nth-child(4) {
+.footer-social .button-fb:hover {
+    background-image: url(../img/fb-hover.svg);
+    background-repeat: no-repeat;
+    background-size: 34px; 
+}
+
+.footer-social .button-fb:active {
+    background-image: url(../img/fb-active.svg);
+    background-repeat: no-repeat;
+    background-size: 34px; 
+}
+
+.footer-social .button-vk {
     background-image: url(../img/vk.svg);
+    background-repeat: no-repeat;
+    background-size: 34px;
+}
+
+.footer-social .button-vk:hover {
+    background-image: url(../img/vk-hover.svg);
+    background-repeat: no-repeat;
+    background-size: 34px;
+}
+
+.footer-social .button-vk:active {
+    background-image: url(../img/vk-active.svg);
     background-repeat: no-repeat;
     background-size: 34px;
 }
@@ -1103,6 +1147,7 @@ body {
 .hidden-icecream {
     text-align: center;
     margin-top: 8px;
+    height: 45px;
 }
 
 .item-hit {
@@ -1132,6 +1177,18 @@ body {
     margin-right: 9px;
 }
 
+
+/* не получилось сделать=((((
+
+breadcrumbs_catalog li:after {
+    content: "»";
+    color: #ffffff;
+    font-size: 16px;
+    padding: 2px;
+    
+    opacity: 1;
+} */
+
 .page-title {
     padding: 0;
     margin: 0;
@@ -1143,7 +1200,7 @@ body {
 
 .filter-form {
     margin-top: 30px;
-    width: 900px;
+    width: 870px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1188,13 +1245,21 @@ legend {
 }
 
 .range-price {
-    width: 219px;
+    width: 206px;
     padding: 4px 10px;
 }
 
 .radio-fat {
-    width: 415px;
+    width: 400px;
     padding: 7px 10px;
+}
+
+.radio-fat input {
+    margin-right: 8px;
+}
+
+.radio-fat label {
+    margin-right: 15px;
 }
 
 .additive-checkbox {
@@ -1249,25 +1314,21 @@ legend {
 }
 
 .pagination-arrow-right {
-    background-image: url("../img/icon-right-small.svg");
+    background-image: url("../img/icon-right-small-white.svg");
     background-repeat: no-repeat;
     background-position-x: 5px;
     background-position-y: 5px;
     
-
     width: 15px;
     height: 20px;
 }
 
 .pagination-list li {
     
-    text-align: center;
-    margin: 7px; 
+    margin: 3px; 
     margin-top: 100px;
 
 }
-
-
 
 /* Слайдер */
 
