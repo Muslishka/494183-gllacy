@@ -564,7 +564,7 @@ body {
 }
 
 .main-header {
-    margin-top: 9px;  
+    padding-top: 9px;  
  
 }
 
@@ -676,6 +676,7 @@ body {
 .header-mode a {
     font-size: 22px;
     line-height: 24px;
+    font-weight: 700;
 }
 .layout-container {
     width: 1146px;
@@ -747,6 +748,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: flex-start;
     margin: 0;
     padding: 0; 
     width: 100%;   
@@ -754,12 +756,38 @@ body {
 
 .item-container {
     width: 267px;
-    height: 322px;
+    height: 362px;
     margin: 0;
-    padding: 0; 
-    
-
+    padding: 0;
+    position: relative;  
 }
+
+.view-item {
+    margin: 0;
+    padding: 0;
+    width: 267px;
+    height: 45px;
+    display: none;
+} 
+
+.item-container:hover .view-item {
+    position: absolute;
+    bottom: 24px;
+    left: 25px;
+    display: block;
+    
+}
+
+.item-container:hover {
+    background-color: rgba(157,177,165,0.8);
+    width: 267px;
+    height: 390px;
+    border-radius: 10px;
+    padding: 5px 13px;    
+}
+
+
+    
 
 .features {
     height: 307px;    
@@ -1175,19 +1203,22 @@ body {
 .breadcrumbs_catalog li{
     width: 67px;
     margin-right: 9px;
+    position: relative;
 }
 
 
-/* не получилось сделать=((((
 
-breadcrumbs_catalog li:after {
+.breadcrumbs_catalog li::after {
     content: "»";
     color: #ffffff;
     font-size: 16px;
-    padding: 2px;
+    position: absolute;
+    top: -1px;
+    right: -15px; 
+    width: 20px;
+    height: 20px;
     
-    opacity: 1;
-} */
+} 
 
 .page-title {
     padding: 0;
@@ -1215,6 +1246,12 @@ fieldset {
     margin: 0;
 }
 
+fieldset label {
+    user-select: none;
+    position: relative;
+    display: inline-block;
+}
+
 legend {
     font-size: 14px;
     line-height: 16px;
@@ -1228,16 +1265,16 @@ legend {
     padding: 7px 10px;
 
     -webkit-appearance: none;
-    
-    
+    display: relative;
+ 
 }
 
 .sort select::after {
-    content: "\2BC6";
+    content: "⯆";
     display: block;
     position: absolute;
-    right: -10px;
-    bottom: 10px;
+    right: 0px;
+    top: 0px;
     font-size: 18px;
     width: 18px;
     height: 18px;
@@ -1254,13 +1291,36 @@ legend {
     padding: 7px 10px;
 }
 
+.radio-fat lable::before {
+    content:"";
+    position: absolute;
+
+    left: -42px;
+    top: 0px;
+
+    width: 25px;
+    height: 25px;
+
+    border: 2px solid #000000;
+}
+
+.radio-fat lable::after {
+    content:"";
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid #ffffff;
+}
+
 .radio-fat input {
     margin-right: 8px;
 }
 
 .radio-fat label {
     margin-right: 15px;
-}
+} 
 
 .additive-checkbox {
     width: 702px;
@@ -1272,7 +1332,10 @@ legend {
    
 }
 
-.items-catalog {
+
+
+.items-catalog,
+.items {
     margin-top: 38px;
     display: flex;
     flex-direction: column;
@@ -1283,10 +1346,9 @@ legend {
 
 .product-items {
     width: 100%;
-    height: 1128px;
+    height: 1110px;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
 
 .product-items li {
@@ -1325,8 +1387,8 @@ legend {
 
 .pagination-list li {
     
-    margin: 3px; 
-    margin-top: 100px;
+    margin: 2px; 
+    
 
 }
 
@@ -1335,7 +1397,7 @@ legend {
 .site-wrapper {
     min-width: 940px;
     background-color: #849d8f;
-    background-image: url("../img/slider-item4.png");
+    background-image: url("../img/slider-item1.png");
     background-repeat: no-repeat;
     background-position: top center;
     
@@ -1438,7 +1500,7 @@ legend {
 
   #product-1:checked ~ .site-wrapper {
     background-color: #849d8f;
-    background-image: url("../img/slider-item4.png");
+    background-image: url("../img/slider-item1.png");
   }
   
   #product-2:checked ~ .site-wrapper {
