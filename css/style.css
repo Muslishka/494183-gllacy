@@ -318,7 +318,7 @@ a {
     width: 1200px;
     height: 430px;  
 }
-
+ 
 .address-text {
     background-image: url("../img/contacs.png");
     background-repeat: no-repeat;
@@ -710,31 +710,29 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    
+    box-sizing: border-box;
+    padding: 16px 20px 0px 19px;
 
 }
 
 .hidden-gifts {
-    margin: 15px 19px 0 19px;
-    margin-top: 15px;
-    margin-left: 19px;
-    
+    margin: 0;    
 } 
 
 .gifts-conditions-text {
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-    margin: 15px 19px 0 19px;
+    margin: 15px 0;
     
 }
 
 .gifts-conditions a { 
-    margin: 46px 22px 0 0;
-    padding: 09px 22px 14px;
     font-size: 18px;
     display: inline-block;
     align-self: flex-end;
+    padding: 12px 24px 12px 23px;
+    margin: 30px 0;
 }
 
 
@@ -792,6 +790,7 @@ body {
 .features {
     height: 307px;    
     margin-top: 40px;
+
 }
 
 .features-container {
@@ -800,38 +799,32 @@ body {
     justify-content: flex-start;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 25px 20px 0px;
+    box-sizing: border-box;
+
 }
 
 .features-text {
     width: 1125px;
     height: 92px;
     text-align: left;
-    margin: 25px 20px 0 20px; 
+    margin: 0;
 }
 
 .features-list {
-    margin: 0;
     padding: 0;
     list-style: none; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
-    /* width: 100%; */
-
-    margin-left: 20px; 
-    margin-right: 20px;
-    margin-top: 9px;
-       
+    margin: 9px 0px;        
 }
 
 .features-item {
     margin: 0;
-    padding: 13px 25px 09px 56px; 
-    width: 485px;
-    
-
+    width: 490px;
+    padding: 14px 20px 10px 56px;
 }
 
 .features-item:first-child {
@@ -998,7 +991,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: row;
-    width: 267px;
+    
     height: 34px;
     justify-content: flex-start;
     margin-top: 24px;
@@ -1357,7 +1350,6 @@ legend {
 }
 
 .pagination-list {
-    width: 267px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -1513,6 +1505,24 @@ legend {
     background-image: url("../img/slider-item3.png");
   }
 
+
+.modal {
+    position: fixed;
+    background-color: #f8f7f4;
+    color: #323232;
+       
+}
+
+/* .modal-login {
+
+    padding: 20px;
+    top: 0px;
+    right: 100px;
+
+    width: 277px;
+    height: 214px;
+        
+} */
 
 
 
